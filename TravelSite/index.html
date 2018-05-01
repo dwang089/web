@@ -11,7 +11,7 @@
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Custom Materialize Theme</title>
+  <title>TravelSite</title>
 </head>
 
 <body>
@@ -43,12 +43,47 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="https://images.pexels.com/photos/753626/pexels-photo-753626.jpeg" alt="">
+        <div class="caption center-align">
+          <h2>Dream Vacation</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque vel optio itaque vitae aut quo.</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <img src="https://images.pexels.com/photos/457881/pexels-photo-457881.jpeg" alt="">
+        <div class="caption left-align">
+          <h2>Affordable Price</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque vel optio itaque vitae aut quo.</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+      <li>
+        <img src="https://images.pexels.com/photos/312997/pexels-photo-312997.jpeg" alt="">
+        <div class="caption right-align">
+          <h2>Gateways</h2>
+          <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque vel optio itaque vitae aut quo.</h5>
+          <a href="#" class="btn btn-large">Learn More</a>
+        </div>
+      </li>
+    </ul>
+  </section>
+
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
-      $('.button-collapse').sideNav();        
+      $('.button-collapse').sideNav();       
+      $('.slider').slider({
+        indicators: true,
+        height: 500, 
+        transition: 500,
+        interval: 6000
+      });  
     });
   </script>
 </body>
